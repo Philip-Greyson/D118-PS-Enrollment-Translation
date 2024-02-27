@@ -1,0 +1,8 @@
+Input/*
+Output/*
+ruff.toml
+.venv
+.venv/*
+googletrans-4.0.0rc1
+googletrans-4.0.0rc1/*
+Output.zip
