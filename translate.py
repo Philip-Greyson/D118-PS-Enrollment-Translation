@@ -1,3 +1,14 @@
+"""Script to translate the PS Ecollect forms to various languages.
+
+https://github.com/Philip-Greyson/D118-PS-Enrollment-Translation
+
+needs googletrans - I needed to build my own version to fix gendered language issues: https://github.com/Philip-Greyson/py-googletrans
+
+Opens the input files, translates the bit of text after the equal sign, outputs it to a file named with the language code.
+Is very slow, waits 3 seconds between lines to prevent rate-limiting translation failure. Also pauses for a minute every 100 lines, and 5 minutes between files
+"""
+
+
 import glob
 import time
 
